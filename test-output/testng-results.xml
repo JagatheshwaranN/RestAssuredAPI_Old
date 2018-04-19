@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="2784" started-at="2018-04-11T04:47:11Z" finished-at="2018-04-11T04:47:14Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="2784" started-at="2018-04-11T04:47:11Z" finished-at="2018-04-11T04:47:14Z">
+      <class name="com.jaga.rest.test.UpdatePersonDetailAPITest">
+        <test-method status="PASS" signature="dataSetup()[pri:0, instance:com.jaga.rest.test.UpdatePersonDetailAPITest@15be6bb]" name="dataSetup" is-config="true" duration-ms="16" started-at="2018-04-11T10:17:11Z" finished-at="2018-04-11T10:17:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataSetup -->
+        <test-method status="PASS" signature="updatePersonDetailAPITest()[pri:0, instance:com.jaga.rest.test.UpdatePersonDetailAPITest@15be6bb]" name="updatePersonDetailAPITest" duration-ms="2729" started-at="2018-04-11T10:17:11Z" finished-at="2018-04-11T10:17:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updatePersonDetailAPITest -->
+      </class> <!-- com.jaga.rest.test.UpdatePersonDetailAPITest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
