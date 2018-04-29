@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="2784" started-at="2018-04-11T04:47:11Z" finished-at="2018-04-11T04:47:14Z">
+  <suite name="Default suite" duration-ms="5769" started-at="2018-04-28T06:52:36Z" finished-at="2018-04-28T06:52:41Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="2784" started-at="2018-04-11T04:47:11Z" finished-at="2018-04-11T04:47:14Z">
-      <class name="com.jaga.rest.test.UpdatePersonDetailAPITest">
-        <test-method status="PASS" signature="dataSetup()[pri:0, instance:com.jaga.rest.test.UpdatePersonDetailAPITest@15be6bb]" name="dataSetup" is-config="true" duration-ms="16" started-at="2018-04-11T10:17:11Z" finished-at="2018-04-11T10:17:11Z">
+    <test name="Default test" duration-ms="5769" started-at="2018-04-28T06:52:36Z" finished-at="2018-04-28T06:52:41Z">
+      <class name="com.jaga.rest.test.CreatePersonAPITest">
+        <test-method status="PASS" signature="dataSetup()[pri:0, instance:com.jaga.rest.test.CreatePersonAPITest@15be6bb]" name="dataSetup" is-config="true" duration-ms="31" started-at="2018-04-28T12:22:36Z" finished-at="2018-04-28T12:22:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dataSetup -->
-        <test-method status="PASS" signature="updatePersonDetailAPITest()[pri:0, instance:com.jaga.rest.test.UpdatePersonDetailAPITest@15be6bb]" name="updatePersonDetailAPITest" duration-ms="2729" started-at="2018-04-11T10:17:11Z" finished-at="2018-04-11T10:17:14Z">
+        <test-method status="PASS" signature="createPersonAPITest()[pri:0, instance:com.jaga.rest.test.CreatePersonAPITest@15be6bb]" name="createPersonAPITest" duration-ms="5691" started-at="2018-04-28T12:22:36Z" finished-at="2018-04-28T12:22:41Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- updatePersonDetailAPITest -->
-      </class> <!-- com.jaga.rest.test.UpdatePersonDetailAPITest -->
+        </test-method> <!-- createPersonAPITest -->
+      </class> <!-- com.jaga.rest.test.CreatePersonAPITest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

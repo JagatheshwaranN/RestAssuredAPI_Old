@@ -12,7 +12,8 @@ import com.jaga.rest.service.Service;
  * 
  * @author Jagatheshwaran
  * @since 10/4/2018
- *
+ * @modified 28/4/2018
+ * 
  */
 class CreatePersonAPITest extends BaseClass {
 
@@ -25,12 +26,12 @@ class CreatePersonAPITest extends BaseClass {
 
 	@BeforeClass
 	public void dataSetup() {
-		name = "Will";
-		surname = "Smith";
-		city = "New York";
-		landmark = "Cross Mount";
-		state = "New York";
-		zipcode = "10001";
+		name = BaseClass.getTestData("Name");
+		surname = BaseClass.getTestData("SurName");
+		city = BaseClass.getTestData("City");
+		landmark = BaseClass.getTestData("LandMark");
+		state = BaseClass.getTestData("State");
+		zipcode = BaseClass.getTestData("ZipCode");
 
 	}
 
@@ -46,12 +47,12 @@ class CreatePersonAPITest extends BaseClass {
 
 			CreatePersonResponse createPersonResponse = gson.fromJson(response.asString(), CreatePersonResponse.class);
 
-			Assert.assertEquals(createPersonResponse.getResponse().get(0).getName(), "Will");
-			Assert.assertEquals(createPersonResponse.getResponse().get(0).getSurname(), "Smith");
-			Assert.assertEquals(createPersonResponse.getResponse().get(0).getAddress().getCity(), "New York");
-			Assert.assertEquals(createPersonResponse.getResponse().get(0).getAddress().getLandmark(), "Cross Mount");
-			Assert.assertEquals(createPersonResponse.getResponse().get(0).getAddress().getState(), "New York");
-			Assert.assertEquals(createPersonResponse.getResponse().get(0).getAddress().getZipcode(), "10001");
+			Assert.assertEquals(createPersonResponse.getResponse().get(0).getName(), BaseClass.getTestData("Name"));
+			Assert.assertEquals(createPersonResponse.getResponse().get(0).getSurname(), BaseClass.getTestData("SurName"));
+			Assert.assertEquals(createPersonResponse.getResponse().get(0).getAddress().getCity(), BaseClass.getTestData("City"));
+			Assert.assertEquals(createPersonResponse.getResponse().get(0).getAddress().getLandmark(), BaseClass.getTestData("LandMark"));
+			Assert.assertEquals(createPersonResponse.getResponse().get(0).getAddress().getState(), BaseClass.getTestData("State"));
+			Assert.assertEquals(createPersonResponse.getResponse().get(0).getAddress().getZipcode(), BaseClass.getTestData("ZipCode"));
 		} else {
 			Assert.assertTrue(false, response.asString());
 		}

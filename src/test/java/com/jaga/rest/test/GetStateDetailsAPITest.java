@@ -16,7 +16,7 @@ import com.jaga.rest.service.Service;
  * 
  * @author Jagatheshwaran
  * @since 10/4/2018
- * @Modified 11/4/2018
+ * @Modified 29/4/2018
  *
  */
 public class GetStateDetailsAPITest extends BaseClass {
@@ -27,12 +27,12 @@ public class GetStateDetailsAPITest extends BaseClass {
 	@BeforeClass
 	public void dataSetup() {
 		testData = new ArrayList<Object>();
-		testData.add("Bihar");
-		testData.add("UP");
-		testData.add("karnataka");
-		testData.add("Kerala");
-		testData.add("tamil nadu");
-		testData.add("MP");
+		testData.add(BaseClass.getTestData("State1"));
+		testData.add(BaseClass.getTestData("State2"));
+		testData.add(BaseClass.getTestData("State3"));
+		testData.add(BaseClass.getTestData("State4"));
+		testData.add(BaseClass.getTestData("State5"));
+		testData.add(BaseClass.getTestData("State6"));
 
 	}
 
